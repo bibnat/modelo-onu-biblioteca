@@ -3,8 +3,111 @@
 <style>
 :root{--b:#1265a5;--d:#0b3558;--l:#eaf4fb;--x:#cfe1ee;--i:#173042}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;color:var(--i);background:#f7fafc;line-height:1.55}.w{width:min(1100px,92%);margin:auto}header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--x)}nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:800;color:var(--d);text-decoration:none}.links{display:flex;gap:13px;flex-wrap:wrap}.links a{text-decoration:none;color:#466477;font-size:.9rem}.hero{background:linear-gradient(135deg,#0b3558,#176aa8);color:#fff;padding:76px 0}h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:.2em 0}h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.1}section{padding:58px 0;scroll-margin-top:64px}.soft{background:#fff}.lead{max-width:750px;color:#e3f2fc;font-size:1.15rem}.btn{display:inline-block;background:#fff;color:var(--d);font-weight:800;text-decoration:none;padding:12px 17px;border-radius:10px;margin:8px 8px 0 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--x);border-radius:15px;padding:21px}.soft .card{background:#fbfdff}.call{background:var(--l);border-left:5px solid var(--b);border-radius:10px;padding:18px;margin:22px 0}.method{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.method div{background:var(--d);color:#fff;text-align:center;padding:17px;border-radius:12px;font-weight:850}.tag{display:inline-block;background:var(--l);border:1px solid var(--x);padding:5px 9px;border-radius:999px;margin:4px}.source{padding:16px;border-radius:11px;margin:9px 0;border:1px solid var(--x)}.resource a{color:var(--b);font-weight:800}.download{background:var(--d);color:#fff;border-radius:18px;padding:28px}footer{background:#071f33;color:#d7e6f0;padding:35px 0}.ey{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;opacity:.85}.nextnav{display:flex;justify-content:flex-end;margin-top:24px}.nextbtn{display:inline-block;background:var(--d);color:#fff;text-decoration:none;font-weight:800;padding:11px 16px;border-radius:9px}.nextbtn:hover{opacity:.9}
 @media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr}.method{grid-template-columns:1fr 1fr}.nextnav{justify-content:stretch}.nextbtn{width:100%;text-align:center}}
-</style></head><body>
-<header><nav class="w"><a class="brand" href="#inicio">Biblioteca Escolar · Modelo ONU</a><div class="links"><a href="#empezar">Empezar</a><a href="#pais">Mi país</a><a href="#tema">Mi tema</a><a href="#evidencias">Evidencias</a><a href="#negociacion">Negociación</a><a href="#debate">Debate</a><a href="#ia">IA</a><a href="#recursos">Recursos</a><a href="#ejemplo">Ejemplo</a></div></nav></header>
+
+/* Menú móvil */
+.menu-toggle{
+  display:none;
+  background:#0b3558;
+  border:0;
+  color:#fff;
+  font-size:1.5rem;
+  line-height:1;
+  padding:9px 11px;
+  border-radius:8px;
+  cursor:pointer;
+  flex:0 0 auto;
+}
+@media(max-width:800px){
+  html,body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .w{
+    width:92%;
+    max-width:92%;
+  }
+
+  header{
+    width:100%;
+  }
+
+  nav.w{
+    width:92%;
+    max-width:92%;
+    min-height:64px;
+    position:relative;
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+
+  .brand{
+    min-width:0;
+    max-width:calc(100% - 56px);
+    font-size:.95rem;
+    line-height:1.2;
+    white-space:normal;
+  }
+
+  .menu-toggle{
+    display:block !important;
+  }
+
+  .links{
+    display:none !important;
+    position:absolute;
+    top:calc(100% + 1px);
+    left:0;
+    right:0;
+    width:100%;
+    z-index:9999;
+    flex-direction:column;
+    gap:0;
+    padding:6px 0;
+    background:#0b3558;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 8px 18px rgba(0,0,0,.22);
+  }
+
+  .links.open{
+    display:flex !important;
+  }
+
+  .links a{
+    display:block;
+    width:100%;
+    padding:12px 14px;
+    color:#fff;
+    font-size:1rem;
+    border-top:1px solid rgba(255,255,255,.15);
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .method{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .nextnav{
+    justify-content:stretch;
+  }
+
+  .nextbtn{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero{
+    width:100%;
+  }
+}</style></head><body>
+<header><nav class="w"><a class="brand" href="#inicio">Biblioteca Escolar · Modelo ONU</a><button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">☰</button><div class="links" id="menu-principal"><a href="#empezar">Empezar</a><a href="#pais">Mi país</a><a href="#tema">Mi tema</a><a href="#evidencias">Evidencias</a><a href="#negociacion">Negociación</a><a href="#debate">Debate</a><a href="#ia">IA</a><a href="#recursos">Recursos</a><a href="#ejemplo">Ejemplo</a></div></nav></header>
 <section class="hero" id="inicio"><div class="w"><div class="ey">EESO N.º 309 “Ovidio Lagos” · Rosario</div><h1>MODELO ONU</h1><p class="lead"><b>Centro de Investigación de la Biblioteca.</b> Te asignaron un país. Ahora tenés que convertirte en su delegado: comprender el problema y defender su posición con evidencias.</p><div class="call" style="background:#ffffff18;border-color:#8ac8ef"><b>No buscamos opiniones. Buscamos evidencias.</b></div><a class="btn" href="#empezar">Me asignaron un país y un tema</a><a class="btn" href="#kit">Descargar kit</a></div></section>
 <section id="empezar" class="soft"><div class="w">
 <h2>¿Qué tengo que hacer ahora?</h2>
@@ -2305,4 +2408,24 @@
 <footer><div class="w"><b>Biblioteca Escolar · EESO N.º 309 “Ovidio Lagos”</b><br>Rosario · Santa Fe · Argentina<br><br>
     Proyecto y desarrollo: M. Natalia Méndez. Bibliotecóloga - TSTI
     <br><br>Recurso educativo de apoyo. Para las reglas del simulacro, consultá siempre el reglamento oficial del Modelo ONU en el que participa la escuela.</div></footer>
+
+<script>
+(function(){
+  const btn=document.querySelector('.menu-toggle');
+  const menu=document.getElementById('menu-principal');
+  if(!btn||!menu) return;
+  btn.addEventListener('click',function(){
+    const abierto=menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded',abierto ? 'true' : 'false');
+    btn.textContent=abierto ? '✕' : '☰';
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='☰';
+    });
+  });
+})();
+</script>
 </body></html>
