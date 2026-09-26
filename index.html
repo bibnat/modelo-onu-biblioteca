@@ -1,13 +1,83 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Modelo ONU | Centro de Investigación</title>
 <style>
-:root{--b:#1265a5;--d:#0b3558;--l:#eaf4fb;--x:#cfe1ee;--i:#173042}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;color:var(--i);background:#f7fafc;line-height:1.55}.w{width:min(1100px,92%);margin:auto}header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--x)}nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:800;color:var(--d);text-decoration:none}.links{display:flex;gap:13px;flex-wrap:wrap}.links a{text-decoration:none;color:#466477;font-size:.9rem}.hero{background:linear-gradient(135deg,#0b3558,#176aa8);color:#fff;padding:76px 0}h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:.2em 0}h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.1}section{padding:58px 0;scroll-margin-top:64px}.soft{background:#fff}.lead{max-width:750px;color:#e3f2fc;font-size:1.15rem}.btn{display:inline-block;background:#fff;color:var(--d);font-weight:800;text-decoration:none;padding:12px 17px;border-radius:10px;margin:8px 8px 0 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--x);border-radius:15px;padding:21px}.soft .card{background:#fbfdff}.call{background:var(--l);border-left:5px solid var(--b);border-radius:10px;padding:18px;margin:22px 0}.method{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.method div{background:var(--d);color:#fff;text-align:center;padding:17px;border-radius:12px;font-weight:850}.tag{display:inline-block;background:var(--l);border:1px solid var(--x);padding:5px 9px;border-radius:999px;margin:4px}.source{padding:16px;border-radius:11px;margin:9px 0;border:1px solid var(--x)}.resource a{color:var(--b);font-weight:800}.download{background:var(--d);color:#fff;border-radius:18px;padding:28px}footer{background:#071f33;color:#d7e6f0;padding:35px 0}.ey{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;opacity:.85}@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr}.method{grid-template-columns:1fr 1fr}}
+:root{--b:#1265a5;--d:#0b3558;--l:#eaf4fb;--x:#cfe1ee;--i:#173042}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;color:var(--i);background:#f7fafc;line-height:1.55}.w{width:min(1100px,92%);margin:auto}header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--x)}nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:800;color:var(--d);text-decoration:none}.links{display:flex;gap:13px;flex-wrap:wrap}.links a{text-decoration:none;color:#466477;font-size:.9rem}.hero{background:linear-gradient(135deg,#0b3558,#176aa8);color:#fff;padding:76px 0}h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:.2em 0}h2{font-size:clamp(1.7rem,4vw,2.6rem);line-height:1.1}section{padding:58px 0;scroll-margin-top:64px}.soft{background:#fff}.lead{max-width:750px;color:#e3f2fc;font-size:1.15rem}.btn{display:inline-block;background:#fff;color:var(--d);font-weight:800;text-decoration:none;padding:12px 17px;border-radius:10px;margin:8px 8px 0 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--x);border-radius:15px;padding:21px}.soft .card{background:#fbfdff}.call{background:var(--l);border-left:5px solid var(--b);border-radius:10px;padding:18px;margin:22px 0}.method{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.method div{background:var(--d);color:#fff;text-align:center;padding:17px;border-radius:12px;font-weight:850}.tag{display:inline-block;background:var(--l);border:1px solid var(--x);padding:5px 9px;border-radius:999px;margin:4px}.source{padding:16px;border-radius:11px;margin:9px 0;border:1px solid var(--x)}.resource a{color:var(--b);font-weight:800}.download{background:var(--d);color:#fff;border-radius:18px;padding:28px}footer{background:#071f33;color:#d7e6f0;padding:35px 0}.ey{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:850;opacity:.85}.nextnav{display:flex;justify-content:flex-end;margin-top:24px}.nextbtn{display:inline-block;background:var(--d);color:#fff;text-decoration:none;font-weight:800;padding:11px 16px;border-radius:9px}.nextbtn:hover{opacity:.9}
+@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr}.method{grid-template-columns:1fr 1fr}.nextnav{justify-content:stretch}.nextbtn{width:100%;text-align:center}}
 </style></head><body>
-<header><nav class="w"><a class="brand" href="#inicio">Biblioteca Escolar · Modelo ONU</a><div class="links"><a href="#empezar">Empezar</a><a href="#pais">Mi país</a><a href="#tema">Mi tema</a><a href="#evidencias">Evidencias</a><a href="#negociacion">Negociación</a><a href="#ia">IA</a><a href="#recursos">Recursos</a></div></nav></header>
+<header><nav class="w"><a class="brand" href="#inicio">Biblioteca Escolar · Modelo ONU</a><div class="links"><a href="#empezar">Empezar</a><a href="#pais">Mi país</a><a href="#tema">Mi tema</a><a href="#evidencias">Evidencias</a><a href="#negociacion">Negociación</a><a href="#debate">Debate</a><a href="#ia">IA</a><a href="#recursos">Recursos</a></div></nav></header>
 <section class="hero" id="inicio"><div class="w"><div class="ey">EESO N.º 309 “Ovidio Lagos” · Rosario</div><h1>MODELO ONU</h1><p class="lead"><b>Centro de Investigación de la Biblioteca.</b> Te asignaron un país. Ahora tenés que convertirte en su delegado: comprender el problema y defender su posición con evidencias.</p><div class="call" style="background:#ffffff18;border-color:#8ac8ef"><b>No buscamos opiniones. Buscamos evidencias.</b></div><a class="btn" href="#empezar">Me asignaron un país y un tema</a><a class="btn" href="#kit">Descargar kit</a></div></section>
-<section id="empezar" class="soft"><div class="w"><h2>¿Qué tengo que hacer ahora?</h2><p>No empieces buscando información al azar. Definí primero tu misión.</p><div class="grid"><div class="card"><h3>1 · País</h3><p>¿Qué Estado representás? Necesitás descubrir qué piensa y qué hace.</p></div><div class="card"><h3>2 · Comisión</h3><p>Identificá el órgano o comisión y sus competencias.</p></div><div class="card"><h3>3 · Tema</h3><p>Copiá el título exacto y transformalo en preguntas de investigación.</p></div></div><div class="call"><b>Pregunta central:</b> ¿Cuál es la posición oficial de mi país respecto de este tema y qué evidencias permiten demostrarla?</div></div></section>
-<section id="pais"><div class="w"><h2>Mi país: ¿a quién represento?</h2><p>En un Modelo ONU representás la posición del Estado asignado, no necesariamente tu opinión personal.</p><div class="method"><div>🎤 DIJO</div><div>🗳️ VOTÓ</div><div>🤝 FIRMÓ</div><div>🏛️ HIZO</div></div><div class="call">Buscá discursos, registros de votación, tratados, políticas oficiales y documentos de la misión permanente de tu país ante Naciones Unidas.</div></div></section>
-<section id="tema" class="soft"><div class="w"><h2>Mi tema: comprender antes de argumentar</h2><p>Preguntate: ¿qué ocurre?, ¿por qué?, ¿a quién afecta?, ¿qué hizo la ONU? y ¿qué relación tiene mi país con el problema?</p><div class="card"><h3>Desarmá el tema</h3><p>Ejemplo: <b>Protección de refugiados y desplazados por conflictos armados</b></p><span class="tag">refugiados</span><span class="tag">desplazados internos</span><span class="tag">conflictos armados</span><span class="tag">ACNUR</span><span class="tag">derecho internacional</span><p>Buscá también las palabras clave en inglés.</p></div></div></section>
+<section id="empezar" class="soft"><div class="w">
+<h2>¿Qué tengo que hacer ahora?</h2>
+<p>No empieces buscando información al azar. Primero identificá exactamente qué te asignaron y cuál será tu misión dentro del Modelo ONU.</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>1 · País</h3>
+    <p><b>¿Qué Estado representás?</b></p>
+    <p>Necesitás conocer el país y descubrir qué posición mantiene respecto del tema que vas a debatir.</p>
+    <p>🌎 <b>Ejemplo:</b> Brasil</p>
+  </div>
+
+  <div class="card">
+    <h3>2 · Comisión / órgano</h3>
+    <p><b>¿Dónde vas a debatir?</b></p>
+    <p>Identificá qué órgano, consejo, comité u organismo de Naciones Unidas vas a representar.</p>
+    <p>Investigá cuáles son sus funciones, qué temas trata y qué tipo de decisiones puede tomar.</p>
+    <p>🏛️ <b>Ejemplo:</b> Consejo de Derechos Humanos</p>
+  </div>
+
+  <div class="card">
+    <h3>3 · Tema</h3>
+    <p><b>¿Qué problema internacional vas a debatir?</b></p>
+    <p>Copiá el título exacto del tema asignado. Después vas a transformarlo en conceptos, palabras clave y preguntas de investigación.</p>
+    <p>📌 <b>Ejemplo:</b> Protección de los derechos de las personas migrantes</p>
+  </div>
+</div>
+
+<div class="call">
+  <b>Tu misión queda definida por tres datos:</b><br><br>
+  🌎 <b>PAÍS</b> → ¿a quién represento?<br><br>
+  🏛️ <b>COMISIÓN / ÓRGANO</b> → ¿dónde voy a debatir?<br><br>
+  📌 <b>TEMA</b> → ¿qué problema voy a tratar?
+</div>
+
+<div class="card" style="margin-top:20px;">
+  <h3>🔎 Tu pregunta central de investigación</h3>
+  <p style="font-size:1.08rem;"><b>¿Cuál es la posición oficial de mi país respecto de este tema?</b></p>
+  <p>Para responderla también vas a necesitar averiguar:</p>
+  <ul>
+    <li>¿Qué evidencias permiten demostrar esa posición?</li>
+    <li>¿Qué dijo anteriormente el país sobre el tema?</li>
+    <li>¿Cómo votó en Naciones Unidas?</li>
+    <li>¿Qué tratados o acuerdos firmó?</li>
+    <li>¿Qué políticas o acciones llevó adelante?</li>
+    <li>¿Qué puede proponer dentro de las competencias de la comisión u órgano en el que participa?</li>
+  </ul>
+</div>
+
+<div class="card" style="margin-top:20px;">
+  <h3>🧭 Tu ruta de investigación</h3>
+  <ol>
+    <li><b>Definí tu misión:</b> país + comisión/órgano + tema.</li>
+    <li><b>Conocé tu país:</b> gobierno, relaciones internacionales y participación en Naciones Unidas.</li>
+    <li><b>Comprendé el tema:</b> conceptos principales y organismos relacionados.</li>
+    <li><b>Investigá la posición oficial:</b> qué dijo, votó, firmó e hizo tu país.</li>
+    <li><b>Reuní evidencias:</b> priorizá documentos oficiales y fuentes confiables.</li>
+    <li><b>Investigá otras delegaciones:</b> posiciones cercanas, negociables y opuestas.</li>
+    <li><b>Construí propuestas:</b> compatibles con la posición del país y las competencias del órgano.</li>
+    <li><b>Prepará el debate:</b> argumentos, preguntas, respuestas y negociación.</li>
+  </ol>
+</div>
+
+<div class="call">
+  🏛️ <b>Recordá:</b> una propuesta puede parecer excelente, pero la comisión u órgano en el que participás debe tener competencia para tratarla.<br><br>
+  Antes de elaborarla preguntate: <b>“¿Este órgano de Naciones Unidas puede realmente hacer lo que estoy proponiendo?”</b>
+</div>
+
+<div class="nextnav"><a class="nextbtn" href="#pais">Siguiente paso: Mi país →</a></div>
+</div></section>
+<section id="pais"><div class="w"><h2>Mi país: ¿a quién represento?</h2><p>En un Modelo ONU representás la posición del Estado asignado, no necesariamente tu opinión personal.</p><div class="method"><div>🎤 DIJO</div><div>🗳️ VOTÓ</div><div>🤝 FIRMÓ</div><div>🏛️ HIZO</div></div><div class="call">Buscá discursos, registros de votación, tratados, políticas oficiales y documentos de la misión permanente de tu país ante Naciones Unidas.</div></div><div class="nextnav"><a class="nextbtn" href="#tema">Siguiente paso: Mi tema →</a></div></section>
+<section id="tema" class="soft"><div class="w"><h2>Mi tema: comprender antes de argumentar</h2><p>Preguntate: ¿qué ocurre?, ¿por qué?, ¿a quién afecta?, ¿qué hizo la ONU? y ¿qué relación tiene mi país con el problema?</p><div class="card"><h3>Desarmá el tema</h3><p>Ejemplo: <b>Protección de refugiados y desplazados por conflictos armados</b></p><span class="tag">refugiados</span><span class="tag">desplazados internos</span><span class="tag">conflictos armados</span><span class="tag">ACNUR</span><span class="tag">derecho internacional</span><p>Buscá también las palabras clave en inglés.</p></div></div><div class="nextnav"><a class="nextbtn" href="#evidencias">Siguiente paso: Evidencias →</a></div></section>
 <section id="evidencias">
   <div class="w">
 
@@ -987,10 +1057,10 @@
     </div>
 
   </div>
-</section>
-<section id="negociacion" class="soft"><div class="w"><h2>Aliados y negociación</h2><p>No busques “países amigos”. Buscá posiciones compatibles respecto del tema concreto.</p><div class="grid"><div class="card" style="background:#eaf7ef"><h3>🟢 Cercanas</h3><p>Posiciones y propuestas compatibles.</p></div><div class="card" style="background:#fff6dc"><h3>🟡 Negociables</h3><p>Diferencias, pero también puntos de acuerdo.</p></div><div class="card" style="background:#fdecec"><h3>🔴 Opuestas</h3><p>Probablemente cuestionarán aspectos importantes.</p></div></div><div class="call"><b>Línea roja:</b> ¿qué no podría aceptar nuestro país? No la inventes: buscá evidencia.</div></div></section>
-<section id="debate"><div class="w"><h2>De investigador a diplomático</h2><div class="method"><div>PROBLEMA</div><div>EVIDENCIA</div><div>POSICIÓN</div><div>PROPUESTA</div></div><div class="call">“Nuestra delegación considera que…” → “Esta posición se fundamenta en…” → “Por ello proponemos…” → “Invitamos a las delegaciones de… a trabajar conjuntamente…”</div></div></section>
-<section id="ia" class="soft"><div class="w"><h2>Uso responsable de IA</h2><div class="call"><b>IA = asistente de investigación. Fuente original = evidencia.</b></div><div class="grid"><div class="card"><h3>Puede ayudarte</h3><p>A comprender conceptos, generar palabras clave, traducir términos, ordenar apuntes y practicar preguntas.</p></div><div class="card"><h3>No alcanza</h3><p>“Según una IA, nuestro país sostiene…” Localizá después la fuente oficial que permita verificarlo.</p></div><div class="card"><h3>Prompt útil</h3><p>“Represento a [PAÍS] en [COMISIÓN] y debo investigar [TEMA]. No hagas el trabajo por mí. Ayudame a crear un plan de investigación y decime qué documentos oficiales debería localizar.”</p></div></div></div></section>
+<div class="nextnav"><a class="nextbtn" href="#negociacion">Siguiente paso: Negociación →</a></div></section>
+<section id="negociacion" class="soft"><div class="w"><h2>Aliados y negociación</h2><p>No busques “países amigos”. Buscá posiciones compatibles respecto del tema concreto.</p><div class="grid"><div class="card" style="background:#eaf7ef"><h3>🟢 Cercanas</h3><p>Posiciones y propuestas compatibles.</p></div><div class="card" style="background:#fff6dc"><h3>🟡 Negociables</h3><p>Diferencias, pero también puntos de acuerdo.</p></div><div class="card" style="background:#fdecec"><h3>🔴 Opuestas</h3><p>Probablemente cuestionarán aspectos importantes.</p></div></div><div class="call"><b>Línea roja:</b> ¿qué no podría aceptar nuestro país? No la inventes: buscá evidencia.</div></div><div class="nextnav"><a class="nextbtn" href="#debate">Siguiente paso: Debate →</a></div></section>
+<section id="debate"><div class="w"><h2>De investigador a diplomático</h2><div class="method"><div>PROBLEMA</div><div>EVIDENCIA</div><div>POSICIÓN</div><div>PROPUESTA</div></div><div class="call">“Nuestra delegación considera que…” → “Esta posición se fundamenta en…” → “Por ello proponemos…” → “Invitamos a las delegaciones de… a trabajar conjuntamente…”</div></div><div class="nextnav"><a class="nextbtn" href="#ia">Siguiente paso: Uso responsable de IA →</a></div></section>
+<section id="ia" class="soft"><div class="w"><h2>Uso responsable de IA</h2><div class="call"><b>IA = asistente de investigación. Fuente original = evidencia.</b></div><div class="grid"><div class="card"><h3>Puede ayudarte</h3><p>A comprender conceptos, generar palabras clave, traducir términos, ordenar apuntes y practicar preguntas.</p></div><div class="card"><h3>No alcanza</h3><p>“Según una IA, nuestro país sostiene…” Localizá después la fuente oficial que permita verificarlo.</p></div><div class="card"><h3>Prompt útil</h3><p>“Represento a [PAÍS] en [COMISIÓN / ÓRGANO] y debo investigar [TEMA]. No hagas el trabajo por mí. Ayudame a crear un plan de investigación, explicame qué competencias tiene este órgano y decime qué documentos oficiales debería localizar para verificar la posición de mi país.”</p></div></div></div><div class="nextnav"><a class="nextbtn" href="#recursos">Siguiente paso: Recursos →</a></div></section>
 <section id="recursos"><div class="w"><h2>Fuentes oficiales para empezar</h2><div class="grid">
 <div class="card resource"><h3>Modelo ONU · ONU</h3><p>Preparación y recursos generales.</p><a target="_blank" href="https://www.un.org/es/mun">Abrir →</a></div>
 <div class="card resource"><h3>ONU Argentina</h3><p>Información y materiales locales.</p><a target="_blank" href="https://argentina.un.org/es">Abrir →</a></div>
@@ -998,7 +1068,7 @@
 <div class="card resource"><h3>Biblioteca Digital ONU</h3><p>Documentos, discursos y resoluciones.</p><a target="_blank" href="https://digitallibrary.un.org/?ln=es">Abrir →</a></div>
 <div class="card resource"><h3>Biblioteca Dag Hammarskjöld</h3><p>Guías y documentación.</p><a target="_blank" href="https://www.un.org/es/library">Abrir →</a></div>
 <div class="card resource"><h3>Votaciones ONU</h3><p>Cómo localizar registros de votación.</p><a target="_blank" href="https://www.un.org/es/library/page/voting-information">Abrir →</a></div>
-</div></div></section>
+</div></div><div class="nextnav"><a class="nextbtn" href="#kit">Siguiente paso: Kit Modelo ONU →</a></div></section>
 <section id="kit" class="soft"><div class="w"><div class="download"><div class="ey">Material de la biblioteca</div><h2>Kit Modelo ONU</h2><p>Cuadernillo para investigar el país, analizar fuentes, registrar evidencias, identificar aliados y preparar el debate.</p><a class="btn" href="Kit_Modelo_ONU_Biblioteca_EESO309.pdf" download>Descargar Kit Modelo ONU</a></div></div></section>
 <footer><div class="w"><b>Biblioteca Escolar · EESO N.º 309 “Ovidio Lagos”</b><br>Rosario · Santa Fe · Argentina<br><br>
     Proyecto y desarrollo: M. Natalia Méndez. Bibliotecóloga - TSTI
